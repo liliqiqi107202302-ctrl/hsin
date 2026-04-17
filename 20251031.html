@@ -341,8 +341,8 @@
                     data = result;
                 }
 
-                if (data && data.success && data.data) {
-                    displayResult(data.data);
+                if (data && data.engilsh){
+                    displayResult;
                     updateStatus('✅ 翻譯完成', 'success');
                 } else {
                     throw new Error(data.error?.message || '翻譯處理失敗');
